@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Query Result</title>
+</head>
+<body>
+    <ul style="list-style-type:none;">
+        <li>
+            <pre>
+                {% for player in result %}
+                    {{ player }}
+                {% endfor %}
+            </pre>
+        </li>
+    </ul>
+    <p>
+        <a href="{{ url_for('query') }}">
+            Run a new query
+        </a>
+    </p>
+</body>
+</html>
